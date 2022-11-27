@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+header {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+header nav ul  li {
+    list-style: none;
+}
+
+header nav h1 img , footer img {
+    max-height: 50px;
+    max-width: 100%;
+}
+
+header nav ul  li a {
+    text-decoration: none;
+    color: rgba(31, 30, 30, 0.76);
+    font-size: 18px;
+    font-weight: bold;
+}
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+
+.header-items img {
+    height: 60vh;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.header-items .heading  {
+   width: 30% ;
+   margin-left: 70px;
+
+}
+
+.header-items .heading  h2 {
+    font-size: 40px;
+    color: rgb(11, 0, 77);
+}
+
+.header-items .heading  p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.header-items .heading  p span {
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+}
+
+main  {
+    display: grid;
+   grid-template-columns: repeat( auto-fit , minmax(400px , 1fr));
+   
+   grid-auto-flow: dense;
+   justify-content: center;
+   grid-gap: 20px;
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+main .box {
+    
+    height: 400px;
+    max-height: 100%;
+    color: #fff;
+    border-radius: 20px;
+    transition: all 0.4s;
+    padding: 40px 30px;
+    position: relative;
+	max-width:100%;
+}
+main .box h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+main .box p {
+    font-size: 20px ;
+    font-weight: bold;
+   
+}
+main .box p span {
+    font-size: 14px;
+    font-weight: normal;
+}
+main .box .footer a {
+    position: absolute;    
+    bottom: 10%;
+    color: #fff;
+    text-decoration:none ;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    
+}
+main .box .footer a:hover {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    
+}
+main .box:hover {
+    transform: translatey( 5px);
+}
+.box1 {
+    background:  linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(tomato , rgb(255, 177, 89));
+}
+.box2 {
+    grid-column: span 2 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(52, 52, 241) , rgb(221, 0, 173));
+}
+.box3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(0, 225, 255) , rgb(66, 0, 128));
+}
+.box4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(255, 175, 1) , rgb(250, 30, 85));
+}
+.box5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(255, 0, 0) , rgb(255, 35, 127));
+}
+.box6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(60, 255, 0) , rgb(1, 59, 14));
+}
+.box7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(234, 0, 255) , rgb(32, 92, 255));
+}
+.box8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(0, 247, 255) , rgb(87, 2, 87));
+}
+.box9 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(0, 0, 226) , rgb(108, 110, 255));
+  grid-column: span 2 ;
+}
+.box10 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(blue , purple);
+}
+.box11 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(176, 106, 255) , rgb(41, 2, 41));
+}
+.box12 {
+    grid-column: span 2 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(blue , purple);
+}
+.box13 {
+  grid-column: span 2 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(245, 72, 72) , rgb(255, 42, 255));
+}
+.box14 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(200, 255, 0) , rgb(255, 0, 170));
+}
+.box15 {
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(28, 28, 71) , rgb(0, 0, 0));
+}
+.box16 {
+ grid-column: span 2 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.308) , rgba(0, 0, 0, 0.295)) , linear-gradient(rgb(0, 0, 0) , rgb(0, 162, 255));
+}
+
+@media (max-width:900px) {
+	
+	.box16 ,.box12 , .box13 , .box9 , .box2 {
+	 grid-column: span 1 ;
+	
+}
+
+
+}
+
+article {
+    margin: 100px  auto;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 45px;
+    color: rgb(11, 0, 77);
+}
+article p {
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(60, 61, 61);
+    font-weight: bold;
+}
+
+article input {
+    background-color: transparent;
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    outline: none;
+    line-height: 70px;
+    padding: 10px 20px 0;
+    display: inline-block;
+    margin:  20px 0;
+}
+article input:hover {
+    border-bottom: 3px solid rgb(11, 0, 77);
+}
+
+article button {
+    padding:  20px 30px;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    transition: all 0.2s;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+article button:hover {
+    background-color: rgb(11, 0, 77);
+    color: #fff;
+} 
+
+
+footer {
+    margin: 0 auto ;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+    margin:  0 20px;
+
+}
+footer ul li a {
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-main {
+   margin: 0 auto 20px;
+   width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(143, 143, 143);
+}
+footer p span {
+    color: rgb(11, 0, 77);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    
+    .header-items {
+        flex-direction: column;
+        
+    }
+    .header-items .heading  {
+        width: 100% ;
+       text-align: center;
+        
+     }
+     .header-items .heading h2 {
+         font-size: 20px;
+     }
+     .header-items .heading p {
+         font-size: 15px;
+     }
+     .header-items img {
+         height: 40vh;
+   
+}
+    .main .box {
+       height: 600px;
+        
+    }
+
+
+}
+

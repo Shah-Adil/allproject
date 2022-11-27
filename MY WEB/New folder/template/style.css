@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   overflow-x: hidden;
+}
+
+
+
+header {
+   
+    max-width: 100%;
+    background-color: rgb(247, 247, 247);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav  {
+    padding: 18px 15%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .4s ease;
+    z-index: 1000;
+}
+#menu-icon {
+    font-size: 40px;
+    transition: all .4s ease;
+    display: none;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+nav ul li {
+    list-style: none;
+} 
+nav ul li a {
+    text-decoration: 0;
+    color: rgb(43, 43, 43);
+    font-size: 14px;
+    -webkit-transition:all 0.3s ;
+    transition: all 0.3s ;
+    font-weight: 600;
+}
+nav ul li .active {
+    color: dodgerblue;
+}
+
+nav ul li a:hover {
+    color: dodgerblue;
+}
+
+
+main .main-head {
+    background: url("https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg?w=2000");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+main .main-head section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 15%;
+
+    height: 100vh;
+}
+.main-head h1,h2{
+    font-size: 45px;
+    color: dodgerblue;
+    font-weight: 800;
+    line-height: 1.1;
+}
+.main-head h2 {
+    color: rgb(51, 51, 51);
+}
+.main-head p {
+    margin: 20px 0;
+    font-style: italic;
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+}
+.main-head a {
+    color: #fff;
+    background: dodgerblue;
+    text-decoration: 0;
+    width:150px ;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s;
+}
+.main-head a:hover {
+    background: rgb(12, 88, 163);
+}
+
+
+
+.main-body h1 {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 800;
+}
+.main-body h1::after {
+    content: "";
+    border-bottom: dodgerblue 3px solid;
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(315px , auto));
+    
+    grid-gap: 1rem;
+    padding: 80px 15%;
+    align-items: center;
+}
+.grid-1 .item-1{
+    background: url("https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=20&m=1189304032&s=612x612&w=0&h=ovTNnR0JX2cRZkzMBed9exRO_PamZLlysLDFkXesr4Q=");
+  
+}
+.grid-1 .item-2{
+    background: url("https://thumbs.dreamstime.com/b/doctor-talking-to-patient-29162305.jpg");
+    
+}
+.grid-1 .item-3{
+    background: url("https://previews.123rf.com/images/stockbroker/stockbroker1507/stockbroker150705607/42402717-cama-del-doctor-sitting-por-masculino-paciente-en-el-hospital.jpg");
+    
+}
+.grid-1 .item-1 , .grid-1 .item-2 ,.grid-1 .item-3 {
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.grid-1 h3 {
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    transition: all 0.3s;
+    color: #fff;
+}
+.grid-1 h3:hover {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    border: 2px solid rgb(37, 37, 37);
+} 
+
+.grid-1 div {
+    height: 300px;
+    background: rgba(0, 0, 0, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in;
+} 
+.grid-1 div:hover {
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+.grid-2 {
+    background: url("https://wallpaperaccess.com/full/1282794.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin:  0 auto;
+    
+}
+.grid-2 h1 {
+    padding: 50px 0 0;
+}
+.card-main {
+    padding: 0px 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(315px , auto));
+    grid-gap: 15px;
+    justify-content: center;
+}
+.card-main .card {
+    background: rgb(247, 247, 247);
+    width: 315px;
+    margin: 0 0 50px ;
+}
+
+.card-main .card .card-head img {
+    width: 315px;
+}
+.card-main .card .card-head {
+    background: rgb(61, 138, 216);
+    color: #fff;
+    text-align: center;
+    padding: 0 0 10px;
+}
+.card-main .card .card-head h3  {
+    padding: 10px 0 0 ;
+}
+.card-main .card .card-head p {
+    font-size: 12px;
+}
+.card-main .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.card-main .card-body div h1 , .card-body div p {
+    padding:  0 0 10px;
+    color: rgb(27, 27, 27);
+    font-size: 14px;
+}
+
+.card-main .card-footer {
+    text-align: center;
+    padding: 0 0 30px ;
+}
+.card-main .card-footer a {
+    text-decoration: 0;
+    color: #000;
+    border: 1px solid rgb(61, 138, 216);
+    font-size: 12px;
+    padding: 10px 20px;
+    transition: all 0.4s ease;
+}
+.card-main .card-footer a:hover {
+    color: #fff;
+    background: rgb(61, 138, 216);
+}
+
+
+.services {
+    padding: 80px 15%;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , auto));
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.services-content  div {
+    background: rgb(228, 228, 228);
+    padding:  20px;
+    border-radius: 10px;
+  
+}
+
+
+.services-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.services-content p {
+    font-size: 1rem;
+    line-height: 1.2;
+    word-spacing: 1px;
+    margin: 10px 0;
+}
+
+
+@media (max-width:1170px) {
+    
+.services , .grid-1  {
+    padding: 80px 3%;
+}
+
+.card-main , main .main-head section  {
+    padding: 0 3%;
+}
+
+nav  {
+    padding: 18px 3%;
+}
+
+
+}
+
+
+
+@media (max-width:860px) {
+    #menu-icon {
+        display: block;
+        z-index: 100001;
+        cursor: pointer;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 100%;
+        background: #fff;
+        height: 110vh;
+        padding: 40px  100px;
+        z-index: 1000;
+    }
+
+    .open {
+        right: 0;
+    }
+
+   
+}

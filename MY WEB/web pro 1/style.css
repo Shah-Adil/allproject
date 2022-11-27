@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+:root {
+    --main-color : #fc036b;
+    --white-text-color: whitesmoke;
+}
+
+body , html {
+    overflow-x: hidden;
+}
+
+
+/* nav */
+
+nav  {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--white-text-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.nav  a {
+    color: var(--white-text-color);
+    transition: all .4s ;
+}
+.nav  a:hover {
+    
+    font-weight: bold;
+}
+
+
+.nav li {
+
+    margin: 0 30px;
+} 
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.429) , rgba(0, 0, 0, 0.423)) , url(https://wallpaperaccess.com/full/31192.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: var(--white-text-color);
+    text-align: center;
+   
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: var(--main-color);
+    margin:  10px auto;
+    border-radius: 5px;
+}
+
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin: 50px 0 30px;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: var(--main-color);
+    border-radius: 30px;
+    color: var(--white-text-color);
+    transition: all .4s ease;
+}
+
+
+#menu {
+    font-size: 2rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: all .4s;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#menu:hover {
+    color: var(--main-color);
+}
+
+
+
+/* events */
+
+section{
+    width: 80%;
+    margin: 50px auto 80px;
+    padding: 50px 0 0 ;
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+   
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , auto));
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.col img {
+    width: 100%;
+    height: 80%;
+    aspect-ratio: 16/9;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event .row {
+    margin-top: 50px;
+}
+
+.row h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+.row p {
+    color: #7c7c7c;
+    margin: 0 0 30px ;
+    padding: 0px 40px;
+}
+
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.388) , rgba(0, 0, 0, 0.393)), url(https://wallpaper.dog/large/5566087.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+
+.explore-content {
+    width: 50%;
+    padding: 50px;
+    color: var(--white-text-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  margin: 0 auto;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+   
+}
+.explore-content .line {
+    margin: 0 0 50px;
+} 
+.explore-content p {
+    color: var(--white-text-color);
+    margin-bottom: 40px;
+}
+
+/* tour */
+
+.tour .img-gallery {
+ display: grid ;  
+  grid-template-columns: repeat(auto-fill , minmax(250px , auto));
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+
+.tour .img-gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+
+
+ .content-col h1  {
+    
+    font-size: 7vmin;
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    margin: 30px auto;
+    padding: 0;
+}
+
+/* .content-col .btn{
+    margin-left: -100px;
+} */
+
+/* tour end */
+
+
+
+/* footer */
+    footer {
+        width: 100%;
+        min-height: 100px;
+        padding: 20px 80px;
+        margin: 0;
+        background: #000;
+        text-align: center;
+    }
+    
+    footer p {
+        color: var(--white-text-color);
+        margin: 20px auto;
+        padding: 20px auto;
+    }
+
+
+/* footer end */
+
+
+/* mobile device */
+
+@media  (max-width:850px) {
+    nav {
+        padding:  0;
+    }
+  
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(0, 0, 0);
+        margin-top: -900px;
+        transition: all .4s;
+    }
+    .active {
+       margin-top: 0;
+       border-radius: 0 0 30% 0;
+    }
+    .nav li {
+        margin: 30px auto;
+    }
+    #menu {
+        display: block;
+    }
+    .ac {
+        color: var(--main-color);
+    }
+    .explore-content {
+        width: 100%;
+    }  
+    footer {
+        padding: 10px;
+    }
+}
+
+img {
+    transition: all .4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.btn:hover {
+    color: var(--main-color);
+    background: var(--white-text-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
+}

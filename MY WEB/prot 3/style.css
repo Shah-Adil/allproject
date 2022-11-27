@@ -1,0 +1,363 @@
+
+
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+:root {
+    
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --light-pink : #F0528D;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --big-font: 65px;
+    --p-font : 1.2rem;
+    --h2-font : 2rem;
+    --med-font : 2.5rem;
+    --sm-font: 1.5rem;
+}
+
+
+body {
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+header {
+    padding: 40px 30px;
+    position: absolute;
+}
+
+.home {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 188, 231, 0.5), rgba(240, 82, 141, 0.7)),
+    url('https://www.mrbeastjobs.com//images/bg2.jpeg') ;
+    background-size: cover;
+    background-position: bottom 100px right 0px;
+    background-repeat: no-repeat;
+   
+}
+
+.home h1 {
+    font-size: var(--big-font);
+    color: var(--light);
+    font-weight:900;
+    margin-bottom: 40px;
+}
+
+
+.home h4 {
+    color: var(--white);
+    font-size: var(--p-font);
+    margin-bottom: 25px;
+}
+
+.home .btn {
+    color: var(--white);
+    background: var(--pink);
+    padding: 12px 30px;
+    font-weight: 800;
+    font-size: var(--p-font);
+    border-radius: 10px;
+    transition: all .3s ease;
+    box-shadow: 0;
+}
+.home .btn:hover {
+    box-shadow: 3px 3px 0px var(--yellow),6px 6px 0px var(--cyan), 9px 9px 0px var(--pink) ;
+}
+
+
+section {
+    padding: 100px 12%;
+}
+
+.content {
+    padding: 0px 12% 100px;
+ 
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 3rem;
+    align-items: center;
+    
+}
+
+
+.content-text-left {
+    background: var(--light-pink);
+    padding: 30px ;
+    border-radius: 30px;
+}
+
+.content-text-left h2 {
+    font-size: var(--h2-font);
+    color: var(--light);
+    
+    font-weight: 800;
+}
+
+.content-text-left p {
+    font-size: var(--p-font);
+    color: var(--light);
+    line-height: 25px;
+    font-weight: 700;
+    margin: 20px 0 0;
+    word-spacing: 1px;
+}
+
+.content-text-right h2  {
+    font-size: var(--med-font);
+}
+
+.content-text-right .text h3 {
+    font-size: var(--med-font);
+    color: #00BCE7;
+    font-weight: 900;
+}
+
+.content-text-right .text h4 {
+    font-size: var(--p-font);
+    font-weight: 700;
+}
+
+.content-text-right .text  {
+    margin: 50px 0;
+}
+
+
+.center-text {
+    text-align: center;
+}
+
+
+.center-text h2 {
+    font-size: var(--med-font);
+    margin-bottom: 10px;
+}
+
+.center-text h5 {
+    font-size: var(--p-font);
+}
+
+
+.team-content {
+    display: grid;
+    align-items: center;
+    
+    grid-template-columns: repeat(auto-fit , minmax(264px , auto));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-content .box {
+    background: #F1F1F1;
+    text-align: center;
+    padding: 90px 50px;
+    border-radius: 20px;
+    transition: all .4s ease;
+}
+
+.box .icon i {
+    font-size: 60px;
+    
+}
+
+.team-content .box:hover {
+    transform: scale(1.1) ;
+}
+
+
+.community-content {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.community-text h2 {
+    font-size: var(--med-font);
+    margin-bottom: 20px;
+}
+
+.community-text p {
+    font-size: var(--p-font);
+    font-weight: 700;
+    margin: 20px 0;
+    word-spacing: 2px;
+}
+.community-map img {
+    width: 100%;
+    height: auto;
+    transition: all .4s ease;
+}
+
+.community-map img:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 60px 0 20px;
+}
+.title img{
+    width: 25px;
+}
+
+.title h4 {
+    font-size: var(--p-font);
+    margin-left: 5px;
+    color: var(--light-pink);
+}
+
+.jobs {
+    padding: 25px 0;
+    border-bottom:  1px solid var(--gray);
+  
+}
+
+.jobs h3 {
+    font-size: var(--h2-font);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.jobs h3:hover {
+    color: var(--light-pink);
+    text-decoration: underline;
+} 
+
+.jobs p {
+    font-size: var(--p-font);
+    font-weight: 700;
+    color: var(--gray);
+}
+
+
+
+footer {
+    background: url(https://www.mrbeastjobs.com/images/pink.jpg);
+    height: 350px;
+    width: 100%;
+}
+
+
+footer h1 {
+    font-size: var(--big-font);
+    color: var(--white);
+    text-align: center;
+    font-family: 900;
+    padding-top: 100px;
+}
+
+footer .social {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+footer .social i {
+    font-size: 40px;
+    color: var(--light-pink);
+    background: var(--light);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 20px;
+   display: inline-block;
+   transition: all .4s ease;
+}
+
+footer .social i:hover {
+    animation-name: md;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes md{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width:1150px ) {
+    section {
+        padding: 100px 3%;
+    }
+    .content {
+        padding: 0px 3% 100px;
+    }
+}
+
+@media (max-width:990px ) {
+    .content-box ,.community-content  {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:768px ) {
+
+    :root {
+        --big-font : 50px;
+    }
+
+    
+}
+
+@media (max-width:300px) {
+    :root {
+        --big-font: 30px;
+    --p-font : 1rem;
+    --h2-font : 1.7rem;
+    --med-font : 2rem;
+    --sm-font: 1.2rem;
+    }
+} 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <img src="https://promo-theme.com/medina-wp/wp-content/uploads/2016/10/logo.png" alt="logo">
+                <ul class="nav">
+                    <li><a class="active" href="">HOME</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a  href="">PROCEDURES</a></li>
+                    <li><a  href="">GALLERY</a></li>
+                    <li><a  href="">SHOP</a></li>
+                    <li><a  href="">BLOG</a></li>
+                    <li><a  href="">CONTACTS</a></li>
+                </ul>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="main-head">
+                <section>
+                    <h1>Helping You </h1>
+                    <h2>Stay Happy One</h2>
+                    <p> Check Out Our Service!</p>
+                    
+                    <a href="">CHECK OUT</a>
+                </section>
+            </div>
+            <div class="main-body">
+                <h1>Our Directions</h1>
+                <article class="grid-1">
+                   
+                    <section class="item-1">
+                        <div>
+                             <h3>PRIVATE CLINIC</h3>
+
+                         </div>   
+                    </section>
+                    <section class="item-2"> 
+                        <div>
+                            <h3>PLASTIC SURGERY</h3>
+
+                        </div>
+                    </section>
+                    <section class="item-3">
+                        <div>
+                            <h3>DENTAL</h3>
+
+                        </div>
+                    </section>
+                </article>
+              
+                <!--grid 2-->
+                <article class="grid-2">
+                    <h1>Our Team</h1>  
+                    <div class="card-main">
+
+                        <section class="card">
+                            <div class="card-head">
+                            <img src="https://promo-theme.com/medina-wp/wp-content/uploads/2016/10/t6.jpg" >
+                            <h3>DR.Emma</h3>
+                            <p>DENTIST</p>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <p>Monday-Friday</p>
+                                <p>Saturday</p>
+                                <p>Sunday</p>
+                            </div>
+                            <div>
+                                <p>08:00-17:00</p>
+                                <p>10:00-16:00</p>
+                                <p>12:00-14:00</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="">READ PROFILE</a>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card-head">
+                            <img src="https://promo-theme.com/medina-wp/wp-content/uploads/2016/10/t1.jpg" >
+                            <h3>DR.SAM</h3>
+                            <p>DENTIST</p>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <p>Monday-Friday</p>
+                                <p>Saturday</p>
+                                <p>Sunday</p>
+                            </div>
+                            <div>
+                                <p>08:00-17:00</p>
+                                <p>10:00-16:00</p>
+                                <p>12:00-14:00</p>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <a href="">READ PROFILE</a>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card-head">
+                            <img src="https://promo-theme.com/medina-wp/wp-content/uploads/2016/10/t2.jpg" >
+                            <h3>DR.Alin</h3>
+                            <p>DENTIST</p>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <p>Monday-Friday</p>
+                                <p>Saturday</p>
+                                <p>Sunday</p>
+                            </div>
+                            <div>
+                                <p>08:00-17:00</p>
+                                <p>10:00-16:00</p>
+                                <p>12:00-14:00</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="">READ PROFILE</a>
+                        </div>
+                    </section>
+                </div>
+                </article>
+
+                <article class="services">
+                    <h1>Our Services</h1>
+                   <div class="services-content">
+
+                       <div>
+                           <h2>Therapiya</h2>
+                           <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
+                        </div>
+                        <div>
+                            <h2>Pharmocology</h2>
+                            <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
+                    </div>
+                    <div>
+                        <h2>Dentistry</h2>
+                        <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
+                    </div>
+                    <div>
+                        <h2>Cardiology</h2>
+                        <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
+                    </div>
+                    <div>
+                        <h2>Virusology</h2>
+                        <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
+                    </div>
+                    <div>
+                        <h2>Eye Surgery</h2>
+                        <p>Sirius WordPress Theme features a slick and clean design that is suitable for virtually any type of website</p>
+                    </div>
+                </div>
+                    
+                </article>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- js -->
+
+
+    <script >
+
+        const navItems = {
+            nav : document.querySelector('.nav'),
+            menu : document.querySelector('#menu-icon')
+        };
+
+        navItems['menu'].addEventListener('click' , () => {
+            navItems['nav'].classList.toggle('open');
+            navItems['menu'].classList.toggle('bx-x');
+
+        });
+
+        window.addEventListener('scroll' , () => {
+            navItems['nav'].classList.remove('open');
+            navItems['menu'].classList.remove('bx-x');
+        })
+
+    </script>
+</body>
+</html>
+
+
+

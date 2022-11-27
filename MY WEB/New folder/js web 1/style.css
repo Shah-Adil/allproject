@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body {
+    text-align: center;
+}
+body img {
+    max-width: 100%;
+}
+header nav {
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+   position: fixed;
+   top: 0;
+}
+header nav h1 {
+    font-size: 40px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row;
+}
+
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav .hamburger span {
+    display: block;
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0 ;
+   
+}
+
+header .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+header .header-main  h1 {
+   
+    margin: 20px auto;
+    font-size: 60px;
+}
+
+header .header-main  p {
+   
+    margin: 20px auto 40px;
+    font-size: 18px;
+}
+
+header .header-main   a {
+    border: #fff 2px solid;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-weight: 400;
+}
+
+
+header .header-main   a:hover {
+    background: #fff;
+    color: black;
+} 
+
+
+
+
+
+
+
+.main-head h2  , .main-body h2{
+    margin: 70px 0 20px ;
+}
+.main-head  p , .main-body p{
+    color: rgb(102, 104, 105);
+    font-size: 14px;
+    line-height: 2;
+    
+}
+
+
+.main-head  .main-head-items {
+    margin: 50px auto;
+    max-width: 1300px;
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main-head  .main-head-items div {
+    max-width: 400px;
+    text-align: left;
+}
+
+.main-head  .main-head-items h3 {
+    margin: 20px 0 ;
+}
+
+
+.main-head  .main-head-items p {
+    color: rgb(102, 104, 105);
+    font-size: 13px;
+    line-height: 2;
+}
+
+
+
+.main-body {
+    margin: 150px 0;
+    
+}
+
+
+
+.main-body  .main-body-items .main-body-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0 150px;
+    margin: 150px auto;
+    max-width: 1300px ;
+    
+}
+
+.main-body  .main-body-items .main-body-flex h3 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.main-body  .main-body-items .main-body-flex .left , .main-body  .main-body-items .main-body-flex .right {
+    max-width: 500px;
+    text-align: start;
+}
+
+.main-body  .main-body-items .main-body-flex p {
+    margin-bottom: 40px;
+}
+
+.main-body  .main-body-items .main-body-flex a {
+    background: dodgerblue;
+    padding: 12px 32px ;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+
+.main-body  .main-body-items .main-body-flex .img {
+  margin-top: 50px;
+}
+
+
+.main-body-items-2 {
+    background: #000;
+    color: #fff;
+  
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+
+.main-body-items-2 img {
+    width:  150px;
+    border-radius: 100%;
+}
+.main-body-items-2  h3 {
+    font-size: 35px;
+    margin:  0 0 20px;
+}
+
+
+.main-body-items-2 p {
+    font-size: 20px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #fff;
+}
+
+
+.main-body-2  {
+    margin: 50px auto;
+    max-width: 1300px;
+}
+
+.main-body-2 h2 {
+    margin: 20px 0;
+}
+
+.main-body-2 p {
+    margin: 20px 0;
+    color: rgb(117, 117, 117);
+}
+
+.main-body-2 img {
+    border-radius: 100%;
+    margin: 10px 0;
+}
+
+
+.main-body-2-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 100px 0 150px;
+}
+
+.main-body-2-items  div {
+    max-width: 400px;
+    margin: auto;
+}
+
+.main-body-2-items  div  p {
+    font-size: 14px;
+}
+
+
+.main-body-3 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main-body-3 h2 {
+    margin: 20px 0;
+}
+
+.main-body-3  p {
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    margin:  30px  auto;
+    width: 500px;
+    
+}
+
+.main-body-3-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+
+
+.main-body-3-items div {
+    max-height: 600px;
+    text-align: left;
+    
+}
+
+.main-body-3-items div p {
+    line-height: 2;
+}
+
+
+.main-body-3-items-2 {
+
+    margin: 150px 0;
+    
+}
+
+.main-body-3-items-2 h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.main-body-3-items-2 a {
+    background: dodgerblue;
+    padding: 14px 25px ;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.main-body-4  {
+    max-width: 1300px;
+    margin: 100px auto 150px;
+}
+
+.main-body-4 .main-body-4-items {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+  
+.main-body-4 .main-body-4-items div {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.main-body-4 .main-body-4-items div ul {
+    margin: 20px 0 50px;
+}
+
+.main-body-4 .main-body-4-items div li {
+    margin: 20px 0;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+
+.main-body-4 .main-body-4-items div a {
+    background: dodgerblue;
+    padding: 14px 25px ;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-body-4 .main-body-4-items  h2 {
+    font-size: 40px;
+    line-height: 0.5;
+}
+
+.main-body-4 .main-body-4-items span {
+    font-size: 14px;
+}
+
+
+.form form {
+    margin: 50px 0;
+    
+}
+.form form input {
+    outline: none;
+    margin: 10px 0;
+    border: 1px solid rgb(105, 105, 105);
+}
+
+.form form .subject input {
+    width: 500px;
+   
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.form form .name input {
+    padding: 10px;
+    width: 250px;
+}
+
+.form form  button {
+    background: dodgerblue;
+    padding: 14px 25px ;
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    border: 0;
+    margin: 20px 0;
+
+}
+
+
+footer {
+    padding: 50px 0;
+    background-color: #000;
+    color: rgb(104, 104, 104);
+
+}
+
+footer p {
+    display: inline-block;
+    
+    margin:  50px 10px;
+}
+
+
+
+
+
+
+
+
+
+

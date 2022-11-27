@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header nav  {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    padding: 22px 0;
+    z-index: 1000;
+    transition: all .4s ease;
+}
+
+header nav  img {
+    height: 30px;
+    
+}
+
+header nav ul li {
+    list-style: none;
+    font-weight: bold;
+
+}
+header nav .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+header nav .hamburger span{
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header .header-main {
+    height: 100vh;
+    max-width:100% ;
+    background:  linear-gradient(rgba(0, 0, 0, 0.555) , rgba(0, 0, 0, 0.527)) , url(http://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-2.jpg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fixed {
+    background: #000;
+    padding: 18px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.386);
+}
+
+header .header-main h1  {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+header .header-main h3 {
+    letter-spacing: 10px;
+    line-height: 40px;
+}
+
+header .header-main p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: rgb(175, 175, 175);
+}
+
+
+header .header-main  a {
+    padding: 10px 25px ;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+header .header-main  a:hover {
+    transform: translateY(-5px);
+}
+
+
+main h2 {
+    text-align: center;
+    margin: 100px 0 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+
+main p {
+    color: rgb(65, 64, 64);
+    text-align: center;
+    margin: 70px 0  40px;
+}
+
+main .my-grid .grid-items  {
+    width: 345px;
+    height: 191px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+main {
+    overflow-x: hidden;
+}
+main .my-grid {
+    position: absolute;
+    width: 70vw;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(345px , 345px ));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main .my-grid .grid-items:hover {
+    transform: translatey(-10px);
+}
+
+
+
+footer {
+    background-color: rgb(36, 36, 36);
+    color: rgb(156, 156, 156);
+    padding: 30px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer .follow div {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid rgb(156, 156, 156);
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    header .header-main h1  {
+        font-size: 28px;
+        
+    }
+    header nav {
+        background-color: black;
+        margin: 0;
+
+    }
+    
+    header nav ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        background-color: black;
+        height: 50px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    header nav .hamburger {
+        display: block;
+    }
+    header .header-main h3 {
+        letter-spacing: 4px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    header .header-main p {
+        font-size: 12px;
+        padding: 0 20px;
+
+    }
+    main .my-grid  {
+        z-index: -1;
+    }
+    footer {
+        font-size: 10px;
+    }
+    footer .follow div {
+        width: 15px;
+        height: 15px;
+        margin: 0 3px;
+    }
+}
+
+
+
